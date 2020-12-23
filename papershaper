@@ -1,3 +1,4 @@
+#! /usr/bin/python3
 import sys			# allows for direct OS command execution
 import getopt			# allow graceful failure if bad command line
 import os			# allows for resolving ~/home folder
@@ -23,16 +24,16 @@ while 1:
     break 					
  if len(sys.argv) == 2:	
     print ("Usage:")
-    print ("python3 papershaper.py [g | w | m ] [minutes]")
+    print ("papershaper [g | w | m ] [minutes]")
     print ("g - get random wallpaper image from user's local/offline gallery in " + galleryread)
     print ("w - get random wallpaper image online from listing of webcams in " + webcamlist)
     print ("m - Max Random: get random wallpaper from offline gallery OR a random image from online webcam")
     print ("minutes is the minutes to delay between refreshes, default is 20 minutes if NO options are used.")
-    print ("Example: python3 papershaper.py m 30 - refresh randomly from either source every 30 minutes")
+    print ("Example: papershaper m 30 - refresh randomly from either source every 30 minutes")
     print ("If you specify the first option (g or w or m) then you must specify minutes.")
-    print ("Default usage: python3 papershaper.py - refresh randomly from offline/local gallery only every 20 minutes")
+    print ("Default usage: papershaper - refresh randomly from offline/local gallery only every 20 minutes")
     print ("\n")
-    print ("For best results, run papershaper.py as a Startup Application or in a start up script.")
+    print ("For best results, run papershaper as a Startup Application or in a start up script.")
     print ("\n")
     print ("Python 2 is supported. Please see papershaper.readme for details.")
     print ("\n")
@@ -50,11 +51,11 @@ while 1:
     elif str(sys.argv[1]) == 'm':
         defaultsource = str(sys.argv[1])
     else:
-        print ("Invalid option(s).  Type python3 papershaper.py -help for help.")
+        print ("Invalid option(s).  Type papershaper -help for help.")
         exit(1)
 
     if str.isdigit(sys.argv[2]) == False:
-        print ("Invalid option(s).  Type python3 papershaper.py -help for help.")
+        print ("Invalid option(s).  Type papershaper -help for help.")
         exit(1)
     elif str.isdigit(sys.argv[2]) == True:
         sleeptime = float(sys.argv[2])
@@ -66,7 +67,7 @@ while 1:
         break
 
  if len(sys.argv) > 3:				# This only happens if user options invalid
-        print ("Invalid option(s).  Type python3 papershaper.py -help for help.")
+        print ("Invalid option(s).  Type papershaper -help for help.")
         exit(1)
 
 
@@ -223,7 +224,7 @@ while 1:		# START A LOOP SO THAT PROGRAM RUNS ON A TIMED BASIS
         os.system(cleanurlcommand)
 
  else:
-        print ("Invalid option(s).  Type python3 papershaper.py -help for help.")
+        print ("Invalid option(s).  Type papershaper -help for help.")
         raw_header_command = '/usr/bin/lynx -cookies -crawl -dump ' 
         raw_file_save_location = ' > '
         cleanurlcommand = raw_header_command + errorfile + raw_file_save_location + currentpapershaper

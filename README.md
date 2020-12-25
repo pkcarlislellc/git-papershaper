@@ -33,6 +33,8 @@ Note that at times a webcam image may appear grainy, gray, black or otherwise di
 
 For best results, invoke Paper Shaper from a start up script or as a Startup Application.
 
+To add new local/offline wallpaper(s), just drop a .jpg into the gallery. Papershaper will rescan the gallery folder and incorporate your addition. 
+
 Operation:
 
 You do not need an external event launcher like cron or evolution calendar to update wallpaper from the local image gallery or random webcam. As a rule you launch with the command python3 ~/com.pkcarlisle/papershaper/papershaper.py or similar as a start up script or command when your computer starts.  Adding a startup command varies from one Linux spin to another.  Paper Shaper has been tested in, and runs beautifully in: KDE 4 (Kubuntu 12.04 LTS), Gnome 2 (CentOS 6 / RHEL 6), MATE (Fedora 20, Ubuntu MATE 18.04). Use your GUI's
@@ -71,6 +73,8 @@ The listing of webcams file can contain comments.  Just don't end a comment with
 The webcam list at ~/com.pkcarlisle/papershaper/webcamgrab.txt can be modified.  You can add or remove cams from the list with the following rules:  You can add comments as you like, just don't end a comment with .JPG or .JPG?  Comments in this file are filtered out automatically when Paper Shaper updates the wallpaper.  The actual webcam URLs must be in a valid URL format. So, you may have a comment like London, England or Antarctica, RRS James Clark Ross Research Ship Webcam but the URLs would have to be in a format like http://common.gcstatic.com/u/webcam/webcam73-roof.jpg or http://www.antarctica.ac.uk/webcams/rrs_james_clark_ross/webcam.jpg.  Either one comment or URL per line.  Edit with your favorite text editor.
 
 The listing of local/offline images is located in ~/com.pkcarlisle/papershaper/gallerylist.txt.  This list cannot contain comments and will be replaced every time Paper Shaper updates the wallpaper. You do not need to (and should not) create or maintain a local images file list manually.  It is created automatically based on the files you store in ~/com.pkcarlisle/papershaper/gallery/ (plus your webcam listing if you choose webcam images).
+
+To add new local/offline wallpaper(s), just drop a .jpg into the gallery. Papershaper will rescan the gallery folder and incorporate your addition. 
 
 This program logs the last URL or local .JPG file pulled to ~/com.pkcarlisle/papershaper/papershaper.log.  This is purely for your convenience.  Not every webcam includes a label, and not all of them have images large enough or interesting enough or of good enough quality to be worth keeping. The log will tell you which URL or file generated the last wallpaper image and you can delete any URL you do not like from the webcam list.
 

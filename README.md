@@ -87,7 +87,7 @@ http://common.gcstatic.com/u/webcam/webcam73-roof.jpg
 London, England
 http://common.gcstatic.com/u/webcam/webcam73-roof.jpg
 
-Remove all other website listings and any blank lines from ~/com.pkcarlisle/papershaper/webcamgrab.txt.
+Remove all other website listings and also any blank lines from ~/com.pkcarlisle/papershaper/webcamgrab.txt.
 
 Set your papershaper startup command to use only online content with the w option: /usr/bin/papershaper w 1
 You are essentially fooling papershaper into selecting a 'random' online webcam but limiting the choice to only one webcam. This updates wallpaper from the same webcam

@@ -82,14 +82,14 @@ Q: I want to use papershaper to monitor only one image from only one online webc
 
 A: Backup then edit the webcam list at ~/com.pkcarlisle/papershaper/webcamgrab.txt. Copy the webcam you want TWICE, like this:
 
-London, England
-http://common.gcstatic.com/u/webcam/webcam73-roof.jpg
-London, England
-http://common.gcstatic.com/u/webcam/webcam73-roof.jpg
+London, England  
+http://common.gcstatic.com/u/webcam/webcam73-roof.jpg  
+London, England  
+http://common.gcstatic.com/u/webcam/webcam73-roof.jpg  
 
 Remove all other website listings and also any blank lines from ~/com.pkcarlisle/papershaper/webcamgrab.txt.
 
-Set your papershaper startup command to use only online content with the w option: /usr/bin/papershaper w 1
+Set your papershaper startup command to use only online content with the w option: /usr/bin/papershaper w 1  
 You are essentially fooling papershaper into selecting a 'random' online webcam but limiting the choice to only one webcam. This updates wallpaper from the same webcam
 as often as you wish.
 

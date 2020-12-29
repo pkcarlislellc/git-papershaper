@@ -78,6 +78,22 @@ To add new local/offline wallpaper(s), just drop a .jpg into the gallery. Papers
 
 This program logs the last URL or local .JPG file pulled to ~/com.pkcarlisle/papershaper/papershaper.log.  This is purely for your convenience.  Not every webcam includes a label, and not all of them have images large enough or interesting enough or of good enough quality to be worth keeping. The log will tell you which URL or file generated the last wallpaper image and you can delete any URL you do not like from the webcam list.
 
+Q: I want to use papershaper to monitor only one image from only one online webcam and to update it periodically. How can I do that?
+
+A: Backup then edit the webcam list at ~/com.pkcarlisle/papershaper/webcamgrab.txt. Copy the webcam you want TWICE, like this:
+
+London, England
+http://common.gcstatic.com/u/webcam/webcam73-roof.jpg
+London, England
+http://common.gcstatic.com/u/webcam/webcam73-roof.jpg
+
+and remove all other website listings and any blank lines from ~/com.pkcarlisle/papershaper/webcamgrab.txt.
+
+Set your papershaper startup command to use only online content with the w option: /usr/bin/papershaper w 1
+You are essentially fooling papershaper into selecting a 'random' online webcam but limiting the choice to only one webcam. This updates wallpaper from the same webcam
+as often as you wish.
+
+
 The Fine Print:
 
 The source of the original list of webcams was Portalview Live Desktop Wallpaper created by Michelle Blowers located at https://sourceforge.net/projects/portalviewlivew/, created under a GNU General Public License version 3.0. That original list was modified, added to, subtracted from, and altered significantly for Paper Shaper.

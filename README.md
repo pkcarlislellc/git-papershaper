@@ -93,6 +93,14 @@ Set your papershaper startup command to use only online content with the w optio
 You are essentially fooling papershaper into selecting a 'random' online webcam but limiting the choice to only one webcam. This updates wallpaper from the same webcam
 as often as you wish.
 
+Q: How do I add new wallpaper to papershaper?  
+
+A: Drop any wallpaper quality .JPG into the gallery at ~/com.pkcarlisle/papershaper/gallery/  
+There is no need to rescan the folder, papershaper will rescan the folder for all wallpapers the next time it cycles.  
+
+Q: How many wallpapers can you have in the papershaper queue?  
+
+A: I have not run into a limit yet and I have around 250 including webcams and offline gallery images.  
 
 The Fine Print:
 

@@ -43,6 +43,7 @@ while 1:
     print ("Example: papershaper m 30 - refresh randomly from either source every 30 minutes")
     print ("If you specify the first option (g or w or m) then you must specify minutes.")
     print ("Default usage: papershaper - refresh randomly from offline/local gallery only every 20 minutes")
+    print ("To monitor only one webcam updated periodically, see the Technical Specifications in the docs.")
     print ("\n")
     print ("For best results, run papershaper as a Startup Application or in a start up script.")
     print ("\n")

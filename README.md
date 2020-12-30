@@ -82,7 +82,7 @@ This program logs the last URL or local .JPG file pulled to ~/com.pkcarlisle/pap
 
 Q: I want to use papershaper to monitor only one image from only one online webcam and to update it periodically. How can I do that?
 
-A: Backup then edit the webcam list at ~/com.pkcarlisle/papershaper/webcamgrab.txt. Copy ans paste the webcam you want TWICE, like this:
+A: Backup then edit the webcam list at ~/com.pkcarlisle/papershaper/webcamgrab.txt. Copy and paste the webcam you want TWICE, like this:
 
 London, England  
 http://common.gcstatic.com/u/webcam/webcam73-roof.jpg  
@@ -123,7 +123,7 @@ https://sourceforge.net/projects/papershaper/
 Free Software Foundation:
 http://directory.fsf.org/wiki/Paper_Shaper
 
-(C)2014,2019.  Distributed under the GNU General Public License compliments of P. K. Carlisle LLC at www.pkcarlisle.com. Notes to mail@pkcarlisle.com. Follow on twitter @pkcarlislellc. 
+(C)2014,2019.  Distributed under the GNU General Public License compliments of P. K. Carlisle LLC at www.pkcarlisle.com. Notes to devops@pkcarlisle.com. Follow on twitter @pkcarlislellc. 
 
 Feedback is always welcome, although any communication may be used by me without restriction.
 

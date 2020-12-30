@@ -51,7 +51,7 @@ while 1:
     print ("\n")
     print ("The Paper Shaper")
     print ("(C)2014,2019.  Distributed under the GNU General Public License compliments of P. K. Carlisle LLC " )
-    print ("at www.pkcarlisle.com. Notes to mail@pkcarlisle.com. Follow on Twitter @pkcarlislellc.")
+    print ("at www.pkcarlisle.com. Notes to devops@pkcarlisle.com. Follow on Twitter @pkcarlislellc.")
     exit(1)
 
  if len(sys.argv) == 3:	

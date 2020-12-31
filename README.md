@@ -24,7 +24,7 @@ The user can:
 
 Paper Shaper requires the lynx browser.  Paper Shaper uses lynx because it will grab an image then go away, so it can run silently in the background as an automated process however often you invoke Paper Shaper. To use lynx, YOU DO NOT, NOT, NOT (did I say NOT?) replace your current browser, learn a new browser, change your default browser, transfer cookies, bookmarks, or anything of the sort.  In fact, once you have lynx installed, you can forget that it's even there.   Lynx will be available as part of your Linux distro.  Paper Shaper assumes that lynx will be installed in /usr/bin/  (**UBUNTU users, see the SPECIAL NOTE in the Technical Specifications regarding lynx versus links browsers.)
 
-Paper Shaper requires python.  It will be available with your Linux distro or at http://www.python.org/. Paper Shaper is written for  Python 3. BOTH Python 2 and Python 3 versions are included in this package. As of October, 2019, the default version, that is, papershaper.py is written for Python 3. papershaper-python-2.py is the Python 2 version for those who want it. (For either version, usage is the same, just use the command '/usr/bin/papershaper...' or '/usr/bin/papershaper-python-2.py...' as desired.)
+Paper Shaper requires Python 3.  It will be available with your Linux distro or at http://www.python.org/. As of October, 2019, the default version is written for Python 3. For the Python 2 version, see the Technical Specifications section for Github.
 
 Selecting wallpaper:
 
@@ -54,9 +54,9 @@ m – Max Random: get a random wallpaper from offline gallery OR a random image 
 
 minutes is the minutes to delay between refreshes, default is 20 minutes.
 
-For example the command /usr/bin/papershaper.py m 30 refreshes randomly from either a webcam or local gallery image every 30 minutes
+For example the command /usr/bin/papershaper m 30 refreshes randomly from either a webcam or local gallery image every 30 minutes
 
-Default usage is /usr/bin/papershaper.py It gets a random wallpaper from your offline/local gallery only, once every 20 minutes (use this usage if you are not always online or if you don't want webcam wallpaper).
+Default usage is /usr/bin/papershaper It gets a random wallpaper from your offline/local gallery only, once every 20 minutes (use this usage if you are not always online or if you don't want webcam wallpaper).
 
 If you specify the first option (g or w or m) then you must specify the minutes as well.
 
@@ -68,7 +68,7 @@ Paper Shaper requires the lynx browser.  Paper Shaper uses lynx because it will 
 
 ** SPECIAL NOTE FOR UBUNTU USERS. In Ububtu 18.04 there is an offering of a command line browser calld links. links IS NOT lynx. Papershaper requires the lynx browser. 'sudo apt install lynx' or similar should get lynx installed for you. lynx is not installed by Ubuntu 18.04 by default, but is readily available for installation.
 
-This program requires Python.  It will be available with your Linux distro or at http://www.python.org/. Papershaper was originally written for and tested in Python 2.6.6.  In anticipation of end of life/support by the Python developers for Python 2, in October, 2019, Papershaper was updated to run in Python 3 by default. BOTH Python 2 and Python 3 versions are included in this package. As of October, 2019, the default version, that is, papershaper is written for Python 3. papershaper-python-2 is the Python 2 version for those who want it. (For either version, usage is the same, just use the command '/usr/bin/papershaper...' or '/usr/bin/papershaper-python-2.py...' as desired.)
+This program requires Python 3.  It will be available with your Linux distro or at http://www.python.org/. Papershaper was originally written for and tested in Python 2.6.6.  In anticipation of end of life/support by the Python developers for Python 2, in October, 2019, Papershaper was updated to run in Python 3 by default. For the Python 2 version, see the Technical Specifications section for Github.
 
 The listing of webcams file can contain comments.  Just don't end a comment with .JPG Or .JPG?  Comments in this file are filtered out automatically when Paper Shaper updates the wallpaper.  
 
@@ -124,6 +124,10 @@ https://sourceforge.net/projects/papershaper/
 auto-installation as part of an official Linux distro. In that sense it is experimental, and should only be used if you really want to play with the code as well
 as run it.)
 
+Github:
+The ready-for-packaging files can be found at https://github.com/pkcarlislellc/papershaper This contains Python 3 only.
+A stable but legacy version is at https://github.com/pkcarlislellc/papershaper-legacy This includes the Python 2 code for those who want it. This git will not be further updated. (For either version, usage is the same, just use the command '/usr/bin/papershaper...' or '/usr/bin/papershaper-python-2...' as desired.)
+
 Free Software Foundation:
 http://directory.fsf.org/wiki/Paper_Shaper
 
@@ -139,11 +143,19 @@ It is purely optional, as just stated...you may use Paper Shaper forever and a d
 
 Changelog:
 
+Thu Dec 31 2020  
+Many changes to prepare for packaging in Debian:
+Updated and clarified the documentation.
+Updated the webcam listing.
+Added copyright and contact information compatible with Debian format and requirements.
+Replaced defualt images with images with a more clear usage license.
+Put Python 2 code in its own legacy git.  
+
 Thu Sep 11 2014  
 Now, with more webcams!  Expanded the list of webcams in webcamgrab.txt. 
 Updated and clarified the documentation.
 
-Mon Oct 7 2019
+Mon Oct 7 2019  
 Converted papershaper.py to Python 3 in anticipation of Python 2 reaching end of life/support by the Python developers.
 
 Retained Python 2 version for those who want it.

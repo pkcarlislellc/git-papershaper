@@ -1,4 +1,5 @@
 #! /usr/bin/python3
+# ﻿Paper Shaper (C)2014, 2020.  Distributed under the GNU General Public License version 3.0 compliments of P. K. Carlisle LLC
 #
 # This program is free software; you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -50,7 +51,7 @@ while 1:
     print ("Python 2 is supported. Please see papershaper.readme for details.")
     print ("\n")
     print ("The Paper Shaper")
-    print ("(C)2014,2019.  Distributed under the GNU General Public License compliments of P. K. Carlisle LLC " )
+    print ("(C)2014,2020.  Distributed under the GNU General Public License compliments of P. K. Carlisle LLC " )
     print ("at www.pkcarlisle.com. Notes to devops@pkcarlisle.com. Follow on Twitter @pkcarlislellc.")
     exit(1)
 

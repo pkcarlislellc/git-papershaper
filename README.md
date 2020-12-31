@@ -1,6 +1,6 @@
 # git-papershaper
-Papershpaer Open Source Project
-﻿Paper Shaper (C)2014, 2019.  Distributed under the GNU General Public License compliments of P. K. Carlisle LLC
+﻿Paper Shaper (C)2014, 2020.  Distributed under the GNU General Public License version 3.0 compliments of P. K. Carlisle LLC
+Paper Shaper automatically sets random wallpaper from local or online JPG images.
 
 Introduction:
 
@@ -100,6 +100,10 @@ Q: How do I add new wallpaper to papershaper?
 A: Drop any wallpaper quality .JPG into the gallery at ~/com.pkcarlisle/papershaper/gallery/  
 There is no need to rescan the folder, papershaper will rescan the folder for all wallpapers the next time it cycles.  
 
+Q: What happens if I'm offline and papershaper tries to retrieve an online image??  
+
+A: The wallpaper for that cycle will be the border color you selected for bordering images. Papershaper does not break, and will retrieve a new wallpaper next cycle.  
+
 Q: How many wallpapers can you have in the papershaper queue?  
 
 A: I have not run into a limit yet and I have around 250 including webcams and offline gallery images.  
@@ -114,16 +118,16 @@ Yes, this is for Linux.  No, it's not for Windows or Mac.  Nuff said.
 
 If you found this file elsewhere, links to latest information is here:
 
-Google Code:
-https://code.google.com/p/paper-shaper-random-wallpaper-tool/ (October, 2019: Deprecated: Google Code is no longer an active service/venture.)
-
 Sourceforge:
 https://sourceforge.net/projects/papershaper/
+(The Sourceforge version is not packaged as an installer. It can run entirely from the user(s) home folder and does not meet the stringent formatting requirements for
+auto-installation as part of an official Linux distro. In that sense it is experimental, and should only be used if you really want to play with the code as well
+as run it.)
 
 Free Software Foundation:
 http://directory.fsf.org/wiki/Paper_Shaper
 
-(C)2014,2019.  Distributed under the GNU General Public License compliments of P. K. Carlisle LLC at www.pkcarlisle.com. Notes to devops@pkcarlisle.com. Follow on twitter @pkcarlislellc. 
+(C)2014,2020.  Distributed under the GNU General Public License version 3.0 compliments of P. K. Carlisle LLC at www.pkcarlisle.com. Notes to devops@pkcarlisle.com. Follow on twitter @pkcarlislellc. 
 
 Feedback is always welcome, although any communication may be used by me without restriction.
 
